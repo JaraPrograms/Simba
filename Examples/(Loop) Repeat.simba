@@ -20,3 +20,16 @@ begin
   // Let's convert the above statement into English:
     // - Repeat the following .... until the variable 'Counter' is greater than 10.
 end.
+//----------------------------------------------------------------------------------------------------------
+//You can also do:
+program RepeatLoop_Example;
+var
+  Counter: Integer;
+begin
+  Counter := 0;
+  repeat
+    WriteLn('Counter = ' + IntToStr(Counter));
+    Inc(Counter); // Inc() is the same as above, just simplified. it increasingly adds one to the counter.
+    Wait(1000); // This wait is optional, I just added it so for every second it adds one.
+  until(Counter > 10);
+end.   
